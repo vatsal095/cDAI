@@ -14,6 +14,7 @@ export default class Token extends React.Component {
       <span className="token-dropdown-container">
         <select defaultValue={token} onChange={(e)=>changeToken(type, e.target.value)} style={{width: `${tokenLength}px`}}>
           {token!='DAI'&&<option value="cDAI">cDAI</option>}
+           //dropdown menu for ERC20 tokens
           <option value="DAI">DAI</option>
           <option value="ETH">ETH</option>
           <option value="USDC">USDC</option>
